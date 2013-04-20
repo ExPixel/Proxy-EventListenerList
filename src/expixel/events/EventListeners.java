@@ -49,13 +49,7 @@ public class EventListeners<T> implements InvocationHandler {
 			e.printStackTrace();
 		}
 	}
-	/*
-    Class proxyClass = Proxy.getProxyClass(
-            Foo.class.getClassLoader(), new Class[] { Foo.class });
-        Foo f = (Foo) proxyClass.
-            getConstructor(new Class[] { InvocationHandler.class }).
-            newInstance(new Object[] { handler });
-	 */
+
 	public T getProxyObject() {
 		return this.proxyObject;
 	}
